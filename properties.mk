@@ -273,52 +273,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1
 
-# Radio
+# Radio 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.vendorprefix=/vendor \
-    ro.vendor.radio.imei.sv=11 \
-    persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.manual_nw_rej_ct=1 \
-    persist.vendor.radio.no_wait_for_card=1 \
-    persist.vendor.radio.dfr_mode_set=1 \
-    persist.vendor.radio.oem_ind_to_both=0 \
-    persist.vendor.radio.qcril_uim_vcc_feature=1 \
-    persist.vendor.radio.0x9e_not_callname=1 \
-    persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.force_get_pref=1 \
-    persist.vendor.radio.is_wps_enabled=true \
-    persist.vendor.radio.eri64_as_home=1 \
-    persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.msgtunnel.start=true \
-    persist.vendor.radio.lte_vrte_ltd=1 \
-    persist.vendor.radio.sw_mbn_update=0 \
-    persist.vendor.radio.sar_sensor=1 \
-    persist.vendor.radio.fi_supported=0 \
-    persist.vendor.radio.rat_on=other \
-    persist.vendor.radio.hidl_dev_service=1 \
     persist.vendor.lte.pco_supported=true \
-    persist.vendor.radio.enableadvancedscan=true \
-    persist.vendor.radio.apm_sim_not_pwdn=1 \
-    persist.vendor.radio.sib16_support=1 \
-    persist.vendor.radio.procedure_bytes=SKIP \
-    persist.vendor.radio.snapshot_timer=22 \
-    persist.vendor.radio.snapshot_enabled=1 \
-    persist.vendor.radio.aosp_usr_pref_sel=true \
-    persist.vendor.radio.flexmap_type=none \
-    persist.vendor.radio.enable_temp_dds=true
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    DEVICE_PROVISIONED=1 \
-    persist.sys.fflag.override.settings_provider_model=false \
-    persist.vendor.data.mode=concurrent \
-    ril.subscription.types=RUIM \
-    ro.telephony.default_network=27,10 \
-    ro.vendor.use_data_netmgrd=true \
-    telephony.lteOnCdmaDevice=1,1
-
+    
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
