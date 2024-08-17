@@ -272,10 +272,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Qualcomm System Daemon
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qcomsysd.enabled=1
-
-# Radio 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.lte.pco_supported=true \
     
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
