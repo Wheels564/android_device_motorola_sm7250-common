@@ -14,11 +14,10 @@ vendor.audio.cts.media=false
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.enable.mirrorlink=false
-vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hw.aac.encoder=true
 vendor.audio.noisy.broadcast.delay=600
-vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
@@ -138,10 +137,14 @@ debug.sf.hw=0
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=1
 persist.sys.sf.force_brightness_capability=1
-debug.sf.enable_gl_backpressure=1
+debug.sf.enable_gl_backpressure=false
 ro.opengles.version=196610
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.disable_ubwc=0
+
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -155,8 +158,6 @@ ro.incremental.enable=1
 ro.hardware.keystore_desede=true
 
 # Media
-debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
 persist.vendor.media.recorder.bt709=true
 
 # OEM Unlock reporting
@@ -213,6 +214,7 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.surface_flinger.protected_contents=true
+debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
