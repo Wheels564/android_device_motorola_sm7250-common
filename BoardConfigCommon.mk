@@ -113,7 +113,7 @@ TARGET_USES_ION := true
 
 # Partitions
 ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1610612736
+BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1394606080
 endif
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
