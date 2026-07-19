@@ -20,6 +20,9 @@ persist.debug.coresight.config=stm-events
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 
+# Force Official Build Status
+ro.lineage.releasetype=MONTHLY   
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
